@@ -1,0 +1,57 @@
+
+SQL*Loader: Release 21.0.0.0.0 - Production on Thu Apr 21 10:28:16 2022
+Version 21.3.0.0.0
+
+Copyright (c) 1982, 2021, Oracle and/or its affiliates.  All rights reserved.
+
+Control File:   orders.ctl
+Data File:      /home/supermt/git/Oracle_test_cases/tpc-h_generated/orders.tbl
+  Bad File:     orders.bad
+  Discard File:  none specified
+ 
+ (Allow all discards)
+
+Number to load: ALL
+Number to skip: 0
+Errors allowed: 50
+Bind array:     250 rows, maximum of 1048576 bytes
+Continuation:    none specified
+Path used:      Conventional
+
+Table ORDERS, loaded from every logical record.
+Insert option in effect for this table: INSERT
+TRAILING NULLCOLS option in effect
+
+   Column Name                  Position   Len  Term Encl Datatype
+------------------------------ ---------- ----- ---- ---- ---------------------
+O_ORDERKEY                          FIRST     *   |       CHARACTER            
+O_CUSTKEY                            NEXT     *   |       CHARACTER            
+O_ORDERSTATUS                        NEXT     *   |       CHARACTER            
+O_TOTALPRICE                         NEXT     *   |       CHARACTER            
+O_ORDERDATE                          NEXT     *   |       DATE YYYY-MM-DD      
+O_ORDERPRIORITY                      NEXT     *   |       CHARACTER            
+O_CLERK                              NEXT     *   |       CHARACTER            
+O_SHIPPRIORITY                       NEXT     *   |       CHARACTER            
+O_COMMENT                            NEXT     *   |       CHARACTER            
+
+
+Table ORDERS:
+  15000000 Rows successfully loaded.
+  0 Rows not loaded due to data errors.
+  0 Rows not loaded because all WHEN clauses were failed.
+  0 Rows not loaded because all fields were null.
+
+
+Space allocated for bind array:                 580500 bytes(250 rows)
+Read   buffer bytes: 1048576
+
+Total logical records skipped:          0
+Total logical records read:      15000000
+Total logical records rejected:         0
+Total logical records discarded:        0
+
+Run began on Thu Apr 21 10:28:16 2022
+Run ended on Thu Apr 21 10:30:00 2022
+
+Elapsed time was:     00:01:43.61
+CPU time was:         00:00:29.63
